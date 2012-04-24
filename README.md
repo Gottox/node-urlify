@@ -33,7 +33,7 @@ to urlify strings.
 ## Example
 
 ``` javascript
-var urlify = require('quotefm').urlify({addEToUmlauts:true, szToss:false, spaces:"_", nonPrintable:"_", trim:true});
+var urlify = require('quotefm').urlify({addEToUmlauts:true, szToSs:false, spaces:"_", nonPrintable:"_", trim:true});
 
 urlify("das eiskalte Händchen")
 // das_eiskalte_Haendchen 
