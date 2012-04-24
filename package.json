@@ -1,6 +1,6 @@
 {
   "name": "urlify",
-  "version": "0.0.3",
+  "version": "0.1",
   "author": "Enno Boland <eb@s01.de>",
   "description": "simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments.",
   "main": "./index",
