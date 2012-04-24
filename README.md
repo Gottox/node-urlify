@@ -2,6 +2,11 @@
 
 This node library simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments
 
+## Installation
+
+```
+# npm install urlify
+```
 
 ## Usage
 
