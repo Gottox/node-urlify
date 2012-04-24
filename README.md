@@ -58,8 +58,8 @@ urlify("das eiskalte Händchen", { addEToUmlauts:false })
 urlify("Heiße Suppe")
 // 'Heisse_Suppe'
 
-urlify("Heiße Suppe", { szToSs:true })
-// 'Heisse_Suppe'
+urlify("Heiße Suppe", { szToSs:false })
+// 'Heisze_Suppe'
 
 urlify("Soon!")
 // 'Soon'
