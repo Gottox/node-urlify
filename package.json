@@ -1,9 +1,9 @@
 {
   "name": "urlify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Enno Boland <eb@s01.de>",
   "description": "simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments.",
-  "main": "./lib/urlify",
+  "main": "./index",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gottox/node-urlify.git"
@@ -15,9 +15,12 @@
   "dependencies" : {
   },
   "devDependencies": {
+    "mocha": "*",
+    "serve": "*",
+    "expect.js": "*",
+    "browserbuild": "*"
   },
-  "bundleDependencies": [
-  ],
+  "scripts" : { "test" : "make test" },
   "license": "MIT",
   "engine": {
     "node": ">=0.6"

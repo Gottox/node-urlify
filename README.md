@@ -58,3 +58,18 @@ urlify("Soon!")
 urlify("This is very important!!! Please read!!!")
 // This_is_very_important_Please_read
 ```
+
+## Tests
+
+The tests are based on expect.js by learnBoost.
+
+To run the tests in node use
+``` bash
+make test
+```
+To run them in your browser use
+
+``` bash
+make test-browser
+<browser> http://127.0.0.1:3000
+```
