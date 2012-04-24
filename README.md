@@ -2,6 +2,9 @@
 
 This node library simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments
 
+Warning: __alpha__ This means: This tools is already usable, but there may be
+incomplete tests and more important: The API may change in future releases.
+
 ## Installation
 
 ```
@@ -11,7 +14,7 @@ This node library simplifies converting utf8 strings to ASCII strings which can 
 ## Usage
 
 ``` javascript
-var urlify = require('urlify').urlify(options)
+var urlify = require('urlify').create(options)
 ```
 
 * ```options``` (optional) is a config map and can contain the following:
@@ -38,7 +41,7 @@ to urlify strings.
 ## Example
 
 ``` javascript
-var urlify = require('quotefm').urlify({addEToUmlauts:true, szToSs:false, spaces:"_", nonPrintable:"_", trim:true});
+var urlify = require('quotefm').create({addEToUmlauts:true, szToSs:false, spaces:"_", nonPrintable:"_", trim:true});
 
 urlify("das eiskalte Händchen")
 // das_eiskalte_Haendchen 
