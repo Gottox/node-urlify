@@ -27,7 +27,7 @@ var urlify = require('urlify').urlify(options)
   * ```string``` may a string to be urlified
   * ```options``` overwrite above options. ```extendString``` has no effect.
 
-If ```extendString``` is is ```true```, you may also use ```"Hello World".urlify()```
+If ```extendString``` is ```true```, you may also use ```"Hello World".urlify()```
 to urlify strings.
 
 ## Example
