@@ -41,25 +41,31 @@ to urlify strings.
 ## Example
 
 ``` javascript
-var urlify = require('quotefm').create({addEToUmlauts:true, szToSs:false, spaces:"_", nonPrintable:"_", trim:true});
+var urlify = require('urlify').create({
+  addEToUmlauts:true,
+  szToSs:true,
+  spaces:"_",
+  nonPrintable:"_",
+  trim:true
+});
 
 urlify("das eiskalte Händchen")
-// das_eiskalte_Haendchen 
+// 'das_eiskalte_Haendchen'
 
 urlify("das eiskalte Händchen", { addEToUmlauts:false })
-// das_eiskalte_Handchen 
+// 'das_eiskalte_Handchen'
 
 urlify("Heiße Suppe")
-// Heisze_Suppe
+// 'Heisse_Suppe'
 
 urlify("Heiße Suppe", { szToSs:true })
-// Heisse_Suppe
+// 'Heisse_Suppe'
 
 urlify("Soon!")
-// Soon
+// 'Soon'
 
 urlify("This is very important!!! Please read!!!")
-// This_is_very_important_Please_read
+// 'This_is_very_important_Please_read'
 ```
 
 ## Tests
