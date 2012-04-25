@@ -1,3 +1,6 @@
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Gottox&url=https://github.com/Gottox/node-urlify&title=node-urlify&language=&tags=github&category=software)
+
+
 ### URLify
 
 This node library simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments
