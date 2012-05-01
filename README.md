@@ -5,9 +5,6 @@
 
 This node library simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments
 
-Warning: __alpha__ This means: This tools is already usable, but there may be
-incomplete tests and more important: The API may change in future releases.
-
 ## Installation
 
 ```
