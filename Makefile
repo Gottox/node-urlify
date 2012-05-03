@@ -6,14 +6,14 @@ all: build build-dev
 build:
 	@mkdir -p dist
 	@./node_modules/.bin/browserbuild \
-		-g urlify \
+		-g Urlify \
 		-m urlify -b lib/ \
 		lib > dist/urlify.js
 
 build-dev:
 	@mkdir -p dist
 	@./node_modules/.bin/browserbuild \
-		-g urlify \
+		-g Urlify \
 		-d -m urlify -b lib/ \
 		lib > dist/urlify-dev.js
 
