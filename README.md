@@ -7,14 +7,49 @@ This node library simplifies converting utf8 strings to ASCII strings which can 
 
 ## Installation
 
+### Node
 ```
 # npm install urlify
 ```
 
+### Browser
+
+```
+# git clone git://github.com/Gottox/node-urlify.git
+# cd node-urlify
+# make build
+```
+
+This compiles a [browserbuild](https://github.com/LearnBoost/browserbuild)
+version to dist/urlify.js
+
+
 ## Usage
 
+### Node
+
 ``` javascript
-var urlify = require('urlify').create(options)
+var urlify = require('urlify').create(options);
+urlify(text);
+```
+
+### Browser
+
+``` html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="dist/urlify.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var urlify = Urlify.create(options);
+			document.write(urlify(text));
+		</script>
+	</body>
+</html>
 ```
 
 * ```options``` (optional) is a config map and can contain the following:
