@@ -5,6 +5,8 @@
 
 This node library simplifies converting utf8 strings to ASCII strings which can be used as readable URL-segments
 
+If you're happily using node-urlify, please leave an entry at [the wiki](https://github.com/Gottox/node-urlify/wiki/Whos-using-node-urlify%3F). Thank you!
+
 ## Installation
 
 ### Node
