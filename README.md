@@ -67,7 +67,7 @@ urlify(text);
     replaces other non-ASCII characters with this character.
   * ```trim``` default: ```false```
     replaces multiple whitespaces/non-ASCII characters by one placeholder.
-  * ```failureOutput``` default: ```"non-printable```
+  * ```failureOutput``` default: ```"non-printable"```
     returned result if output is reduced to an empty string.
   * ```extendString``` default: ```false```
     If true, extends String object with urlify method.
