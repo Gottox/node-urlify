@@ -56,15 +56,19 @@ urlify(text);
 
 * ```options``` (optional) is a config map and can contain the following:
   * ```addEToUmlauts``` default: ```false```
-    replaces 'ä', 'ö', and 'ü' with 'ae', 'oe', and 'ue' instead of 'a', 'o', and 'u'
+    replaces 'ä', 'ö', and 'ü' with 'ae', 'oe', and 'ue' instead of 'a', 'o', and 'u'.
   * ```szToSs``` default: ```true```
-    if true replaces 'ß' with 'ss', otherwise with 'sz'
+    if true replaces 'ß' with 'ss', otherwise with 'sz'.
   * ```spaces``` default: ```"_"```
     replaces whitespace characters with this character.
+  * ```toLower``` default: ```false```
+    converts all uppercase ASCII characters to lowercase.
   * ```nonPrintable``` default: ```"_"```
     replaces other non-ASCII characters with this character.
   * ```trim``` default: ```false```
-    replaces multiple whitespaces/non-ASCII characters by one placeholder
+    replaces multiple whitespaces/non-ASCII characters by one placeholder.
+  * ```failureOutput``` default: ```"non-printable```
+    returned result if output is reduced to an empty string.
   * ```extendString``` default: ```false```
     If true, extends String object with urlify method.
     So after calling the constructor, you can use ```"Hello World".urlify()```
