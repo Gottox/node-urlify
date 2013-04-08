@@ -49,6 +49,20 @@ describe('main', function() {
 
 	});
 
+	it("toLower", function() {
+		expect(create()("HeLlO")).to.be("HeLlO")
+		expect(create({toLower:true})("HeLlO")).to.be("hello")
+
+	});
+
+	it("failureOutput", function() {
+		expect(create()("")).to.be("")
+		expect(create({trim:true})("!@#$")).to.be("non-printable")
+		expect(create({trim:true,failureOutput:false})("!@#$")).to.be(false)
+		expect(create({trim:true,failureOutput:"something-else-to-say"})("!@#$")).to.be("something-else-to-say")
+
+	});
+
 	it("nonPrintable", function() {
 		expect(create()("***")).to.be("___")
 
