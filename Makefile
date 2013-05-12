@@ -23,7 +23,7 @@ test:
 		--reporter $(REPORTER) \
 		$(TESTS)
 
-test-browser:
+test-browser: build-dev
 	@./node_modules/.bin/serve test/
 
 clean:
