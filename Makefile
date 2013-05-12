@@ -24,9 +24,11 @@ test:
 		$(TESTS)
 
 test-browser: build-dev
+	@mkdir -p test/dist
+	@cp dist/* test/dist
 	@./node_modules/.bin/serve test/
 
 clean:
-	@rm -r dist
+	@rm -r dist/* test/dist
 
 .PHONY: test test-browser clean
