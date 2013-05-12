@@ -20,7 +20,10 @@
     "expect.js": "*",
     "browserbuild": "*"
   },
-  "scripts" : { "test" : "make test" },
+  "scripts" : {
+    "install" : "make",
+    "test" : "make test"
+  },
   "license": "MIT",
   "engine": {
     "node": ">=0.6"
