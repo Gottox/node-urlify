@@ -107,4 +107,11 @@ describe('main', function() {
 		expect(create({trim:false})(" foo bar ", {trim:true})).to.be("foo_bar")
 
 	});
+
+	it("async", function(done) {
+		create({trim:false})("foo bar", function(url) {
+			expect(url).to.be("foo_bar");
+			done();
+		});
+	});
 });
