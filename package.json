@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "serve": "*",
     "expect.js": "*",
     "browserbuild": "*"
   },

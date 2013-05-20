@@ -26,7 +26,7 @@ test:
 test-browser: build-dev
 	@mkdir -p test/dist
 	@cp dist/* test/dist
-	@./node_modules/.bin/serve test/
+	@echo visit file://$(PWD)/test/index.html
 
 clean:
 	@rm -r dist/* test/dist
